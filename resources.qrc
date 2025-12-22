@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>audio/HAVK.mp3</file>
+        <file>audio/saiyide.mp3</file>
+        <file>audio/TKHAWK.mp3</file>
+        <file>audio/kemiao.mp3</file>
+    </qresource>
+</RCC>
