@@ -588,7 +588,7 @@
             <span>应用作者：</span>
             <span class="author-name">王光骅</span>
             <span style="margin-left: auto; color: #B0BEC5; font-size: 16px;">
-                <i class="fas fa-code"></i> 基于QT框架开发
+                <i class="fas fa-code"></i> 基于QT框架开发+少量java(音频）
             </span>
         </div>
     </div>
@@ -611,10 +611,11 @@
             </div>
             
             <div class="app-version-info">
-                <span><i class="fas fa-code-branch"></i> 版本: 1.4.0</span>
+                <span><i class="fas fa-code-branch"></i> 版本: 1.5.1</span>
                 <span><i class="fas fa-user"></i> 开发者: 王光骅</span>
                 <span><i class="fas fa-mobile-alt"></i> 平台: Android 8.0+</span>
                 <span><i class="fas fa-database"></i> 数据: 200+物品价格数据库</span>
+                <span><i class="fas fa-database"></i> 拥有音频悬浮窗,可以在合适时间播放音频,增加游戏氛围</span>
             </div>
         </div>
     </section>
@@ -653,6 +654,10 @@
                             <i class="fas fa-gamepad"></i>
                             <span>游戏内便捷工具</span>
                         </div>
+                        <div class="screen-item">
+                            <i class="fas fa-coins"></i>
+                            <span>音频查询</span>
+                        </div>
                     </div>
                 </div>
                 
@@ -666,6 +671,7 @@
                         <li><i class="fas fa-check-circle"></i> 内置游戏音频库</li>
                         <li><i class="fas fa-check-circle"></i> 快速搜索过滤功能</li>
                         <li><i class="fas fa-check-circle"></i> 安全无广告体验</li>
+                        <li><i class="fas fa-check-circle"></i> 音频悬浮窗</li>
                         <li><i class="fas fa-check-circle"></i> 完全免费使用</li>
                     </ul>
                     
@@ -687,11 +693,11 @@
             
             <button class="download-btn" id="downloadBtn">
                 <i class="fas fa-download"></i>
-                下载SCF辅助 (v1.4.0)
+                下载SCF辅助 (v1.5.1)
             </button>
             
             <div class="download-info">
-                <p>文件大小: 56.7 MB</p>
+                <p>文件大小: 53.28 MB</p>
                 <p>更新日期: 2025年12月22日 | 开发者: 王光骅</p>
                 <p>基于QT框架开发，专为三角洲行动设计</p>
             </div>
@@ -727,7 +733,10 @@
                     <h4><i class="fas fa-filter"></i> 智能搜索过滤</h4>
                     <p>强大的搜索算法，可根据价格区间快速过滤物品，支持关键词搜索和价格排序，找到最适合您的游戏物品。</p>
                 </div>
-                
+                <div class="feature-card">
+                    <h4><i class="fas fa-filter"></i> 音频悬浮窗</h4>
+                    <p>启动悬浮窗后，可以在游戏中合适的时间播放音频，增加游戏气氛。</p>
+                </div>
                 <div class="feature-card">
                     <h4><i class="fas fa-palette"></i> 一致视觉风格</h4>
                     <p>采用与三角洲行动游戏一致的深色主题设计，蓝绿色主色调，提供沉浸式使用体验。</p>
@@ -774,7 +783,7 @@
                 <div class="footer-section">
                     <h4>SCF辅助</h4>
                     <p>三角洲行动SCF游戏辅助工具</p>
-                    <p>版本: 1.4.0</p>
+                    <p>版本: 1.5.1</p>
                     <p>开发者: 王光骅</p>
                 </div>
                 
@@ -789,8 +798,9 @@
                 <div class="footer-section">
                     <h4>支持</h4>
                     <a href="#">常见问题</a>
-                    <a href="widget.cpp">查看软件UI代码>ch>
+                    <a href="widget.cpp">查看软件UI代码</a>
                     <a href="mp4JC.html">使用教程</a>
+                    <a href="https://d6.qyshare.store/s/TBVWTxUNFVMFBQNRBQ8KFCVA50Gg5TBQIaKFCVA50wMFKFCVA50BpWBgKFCVA50CGlEODgKFCVA50FBlIHKFCVA50KFCVA50UBURUbFVhERH9YREMVDRVYREQZRk5CWRlYRVKFCVA50VGxVYRER8Uk4VDRVCR1tYVlMYBQcFKFCVA50hgGBRgFDxgFBKFCVA50UHB1ZVDxpUBKFCVA508HGgMOVgUaDlNRUhpUKFCVA50wFUUQcGUlQKFCVA50VKFCVA50YZVV5ZFRsVVlQVDRUCKFCVA50lUEUQ4FBxoPDwcCGgNSBVEaVgEEBRoPBgJRVVEPDgRTBwKFCVA50VGxVZVlpSFQ0VZHRxQQYZKFCVA50hkHGU1eRxUbFVRYWUNSWUNjTkdSFQ0VVkdHW15UVkNeWFkYTxpNXkcaVFhaR0VSRERSUxUbFVZTFQ0VBFVUBFIPVVIaBlRVUxoDBQFUGlUFBwEaUwFRUQ4OBFEFD1JUFUo=">下载Windows电脑版</a>
                 </div>
                 
                 <div class="footer-section">
@@ -818,10 +828,10 @@
         // 下载按钮点击事件
         document.getElementById('downloadBtn').addEventListener('click', function() {
             // 设置下载链接
-            const apkUrl = 'https://d6.qyshare.store/s/TBVWTxUNFQEHUlRWBQUCGlIHVlEaKFCVA501NWBRoPKFCVA50lNVGlZTBQMOUgRTDw8OUxUbFVhERH9YREMVDRVYREQZRk5CWRlYRVKFCVA50VGxVYRER8Uk4VDRVCR1tYVlMYBQcFKFCVA50hgGBRgFBxgGKFCVA50lVRKFCVA50lQBBRoCVQMDGgNWKFCVA50gKFCVA50aDwcHDxoKFCVA50DgYOKFCVA50wEKFCVA50VgQDBKFCVA50IZVV5ZFRsVVlQVDRUFVQcBKFCVA50VIKFCVA50UhpRKFCVA50VRSGgMEKFCVA501YaDgEDUxpSBg8HVVYKFCVA50UgdTKFCVA50VIVGxVZVlpSFQ0VZHRxQQYZKFCVA50xkHGVZHXBUbFVRYWUNSWUNjTkdSFQ0VFRsVVlMVDRUFVQJVDlVWUhpUUg4KFCVA50GgMFVQ8aDwJWKFCVA50BoDVKFCVA50YOUgJTBwNVVVEVSg==';
+            const apkUrl = 'https://d6.qyshare.store/s/TBVWTxUNFVMOUwcFKFCVA50VIHGgKFCVA50OKFCVA50lEaKFCVA501EOKFCVA50RoOBFQKFCVA50GlEOBKFCVA508EBKFCVA50KFCVA50FKFCVA501EKFCVA50BBUbFVhERH9YREMVDRVYREQZRk5CWRlYRVKFCVA50VGxVYRER8Uk4VDRVCR1tYVlMYBQcFKFCVA50hgGBRgFDxgBKFCVA50KFCVA50cPBgZTKFCVA50RpRDwcCGgMHDw4aVQQGURpUBVFSKFCVA50QZUVFMPDwEZVV5ZFRsVVlQVDRUBD1QFKFCVA50wIOURpWBFRWGgNTDlYaVgRSUxoOBKFCVA508BBKFCVA50IGUgcPKFCVA50lIVGxVZVlpSFQ0VZHRxQQYZKFCVA50hkGGVZHXBUbFVRYWUNSWUNjTkdSFQ0VFRsVVlMVDRUDB1JTKFCVA50KFCVA50EEKFCVA50hoDKFCVA50wEPGgNWU1YaVlICBBoFBVIGUgECDlRTBFQVSg==';
             
             // 创建下载提示
-            const downloadConfirm = confirm('即将下载三角洲行动SCF辅助应用(56.7 MB)，是否继续？\n\n应用作者：王光骅\n版本：v1.4.0\n文件大小：56.7 MB');
+            const downloadConfirm = confirm('即将下载三角洲行动SCF辅助应用(53.28 MB)，是否继续？\n\n应用作者：王光骅\n版本：v1.5.1\n文件大小：53.28 MB');
             
             if (downloadConfirm) {
                 // 直接开始下载
